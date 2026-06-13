@@ -1,45 +1,29 @@
-# PharmaFlow Pharmacy POS System v1
+# PharmaFlow Pharmacy Management System
 
-## Overview
+A local PHP, HTML, CSS, and JavaScript pharmacy management starter with these working modules:
 
-PharmaFlow Pharmacy POS System v1 is a lightweight pharmacy management and point-of-sale application developed using PHP, HTML, CSS, JavaScript, and SQLite. It is designed for testing and learning purposes, providing essential pharmacy operations such as inventory management, sales processing, patient management, and reporting.
+- Dashboard with daily sales, purchases, revenue snapshot, low stock, expiring batches, out of stock, recent transactions, and user activity logs
+- Drugs/products module with add, edit, delete, categories, brands, dosage, units, barcode, pricing, manufacturer, storage condition, sell mode, and minimum stock alerts
+- Inventory module with stock-in purchases, stock-out adjustments, damaged/expired handling, batch tracking, expiry monitoring, stock history, and multi-batch support
+- Sales/POS module with fast search, multi-item cart, discount, tax, cash, MTN MoMo, Airtel Money, partial payments, receipt printing, and invoice generation
+- Patient management with registration, contact details, next of kin, prescription history, loyalty discount, and purchase history
+- User management with roles for admin, pharmacist, cashier, and director plus activity logs
 
-## Requirements
+## Run locally
 
-* PHP installed on your computer
-* PHP must be added to the Windows PATH environment variable
+1. Open the project folder in XAMPP `htdocs` or any PHP-enabled web root.
+2. Start Apache.
+3. Visit `http://localhost/pharmacy/index.php`
 
-## Running the System
+You can also run it quickly with the PHP built-in server from this folder:
 
-1. Ensure PHP is installed and added to PATH.
-2. Open the project folder.
-3. Double-click **Start-Pharmacy.bat**.
-4. Your browser will automatically open the system.
+```bash
+php -S localhost:8000
+```
 
-**Note:** XAMPP, WAMP, or any other web server package is NOT required.
+Then open `http://localhost:8000/index.php`.
 
-## Features
+## Notes
 
-* Pharmacy POS and sales management
-* Inventory and stock tracking
-* Batch and expiry monitoring
-* Patient management
-* User role management
-* Sales reporting and activity logs
-* SQLite database with automatic setup
-
-## Database
-
-The application automatically creates and initializes the SQLite database on first launch.
-
-## Disclaimer
-
-This is a test pharmacy POS system (Version 1) intended for educational, demonstration, and development purposes.
-
-## Developer
-
-**Tumusiime Mark**
-MSc Digital Forensics and Information Security Student
-National Forensic Sciences University (NFSU)
-
-© PharmaFlow Pharmacy POS System v1
+- The app auto-creates `data/pharmacy.sqlite` on first run and seeds demo data.
+- This is a strong operational starter for the modules you listed. We can next add authentication, supplier management, prescriptions, reports, procurement approvals, and real mobile money integrations.
